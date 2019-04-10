@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TestApp"
+             xmlns:effects="clr-namespace:Xamarin.EnableKeyboardEffect;assembly=Xamarin.EnableKeyboardEffect"
              x:Class="TestApp.MainPage">
 
     <StackLayout>
@@ -9,6 +10,9 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+        <Entry Text="Test" effects:EnableKeyboardEffect.EnableKeyboard="False" ></Entry>
+        
     </StackLayout>
 
 </ContentPage>
